@@ -1,4 +1,3 @@
-
 /**************************************************************************/
 /*!
 This is a demo for the Adafruit MCP9808 breakout
@@ -33,12 +32,12 @@ void loop() {
 
   // Read and print out the temperature, then convert to *F
   float c = tempsensor.readTempC();
-  float f = c * 9.0 / 5.0 + 32;
-  Serial.print("Temp: "); Serial.print(c); Serial.print("*C\t"); 
-  Serial.print(f); Serial.println("*F");
+  //float f = c * 9.0 / 5.0 + 32;
+  Serial.print("Temp: "); Serial.print(c); Serial.println("*C\t"); 
+  //Serial.print(f); Serial.println("*F");
   
   //Serial.println("Shutdown MCP9808.... ");
   //tempsensor.shutdown(); // shutdown MSP9808 - power consumption ~0.1 mikro Ampere
   
-  delay(1000);
+  delay(2000);
 }
