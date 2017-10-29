@@ -1,7 +1,7 @@
 #define LED 13
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.println("O3 testing");
 }
 
@@ -10,5 +10,5 @@ void loop() {
   Serial.print("O3: ");  Serial.print(O3);   Serial.println(" ppm");
   
   analogWrite(LED, O3);
-  delay(500);
+  delay(2000);
 }
