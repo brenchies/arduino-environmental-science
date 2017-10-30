@@ -5,7 +5,7 @@ Then connect one end of a 10K resistor from Analog 0 to ground
  
 For more information see http://learn.adafruit.com/photocells */
  
-int photocellPin = 0;     // the cell and 10K pulldown are connected to a0
+int photocellPin = 4;     // the cell and 10K pulldown are connected to a0
 int photocellReading;     // the analog reading from the analog resistor divider
  
 void setup(void) {
@@ -31,5 +31,5 @@ void loop(void) {
   } else {
     Serial.println(" - Very bright");
   }
-  delay(1000);
+  delay(2000);
 }
