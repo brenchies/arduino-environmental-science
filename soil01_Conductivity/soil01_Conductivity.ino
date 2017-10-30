@@ -9,7 +9,27 @@ void setup() {
 void loop() {
     // read the value from the sensor:
     sensorValue = analogRead(sensorPin);
-    Serial.print("sensor = " );
+    Serial.print("Raw value : ");
     Serial.println(sensorValue);
-    delay(1000);
+    if (sensorValue > 723)
+    {
+      Serial.println("Dry");
+    }
+    else if (sensorValue > 323)
+    {
+      Serial.println("Humid");
+    }
+    else if (sensorValue > 73)
+    {
+      Serial.println("Wet");
+    }
+    else
+    {
+      Serial.println("Very wet");
+    }
+      //sensorValue = map(sensorValue,1023,143,0,100);
+    //Serial.print("Moisture : ");
+    //Serial.print(sensorValue);
+    //Serial.println("%");
+    delay(2000);
 }
