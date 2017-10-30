@@ -3,18 +3,13 @@
     @file     Adafruit_MPL3115A2.cpp
     @author   K.Townsend (Adafruit Industries)
     @license  BSD (see license.txt)
-
     Example for the MPL3115A2 barometric pressure sensor
-
     This is a library for the Adafruit MPL3115A2 breakout
     ----> https://www.adafruit.com/products/1893
-
     Adafruit invests time and resources providing this open source code,
     please support Adafruit and open-source hardware by purchasing
     products from Adafruit!
-
     @section  HISTORY
-
     v1.0 - First release
 */
 /**************************************************************************/
@@ -50,5 +45,5 @@ void loop() {
   float tempC = baro.getTemperature();
   Serial.print(tempC); Serial.println("*C");
 
-  delay(250);
+  delay(2000);
 }
